@@ -1,0 +1,1 @@
+SELECT * FROM ORDERS WHERE SHIP_MODE = 'First Class'

@@ -21,3 +21,5 @@ models:
   #         - not_null\
   - name: transform
   - name: transform_india
+  - name: transform_usa
+  - name: sub_category

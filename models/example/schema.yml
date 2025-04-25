@@ -23,3 +23,10 @@ models:
   - name: transform_india
   - name: transform_usa
   - name: sub_category
+
+sources:
+  - name: sample
+    database: S3_BUCKET
+    schema: public
+    tables:
+      - name: orders

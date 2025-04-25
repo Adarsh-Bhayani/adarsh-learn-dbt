@@ -1,6 +1,7 @@
 
 {{ config(materialized = 'table')}}
 
+
 select 
  country ,
  state ,
@@ -8,7 +9,7 @@ select
  count(customer_id) as total_customer,
  sum(sales) as total_sales,
  sum(profit) as total_profit
-from orders
+from {{ source('sample','orders') }}
 group by country , state 
 
 
